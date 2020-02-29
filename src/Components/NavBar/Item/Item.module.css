@@ -1,0 +1,12 @@
+.item {
+	color: rgba(243, 156, 18,1.0);
+}
+
+.item a {
+	color: white;
+	text-decoration: none;
+}
+
+.item a.activeLink {
+	color: rgba(231, 76, 60,1.0);
+}

@@ -1,0 +1,16 @@
+.app {
+  display: grid;
+
+  width: 1300px;
+
+  margin: 0 auto;
+
+  grid-template-areas: 
+  "h h"
+  "n p"
+  "f f";
+
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 1fr 10fr;
+  grid-gap: 10px;
+}

@@ -1,0 +1,9 @@
+.contentWrapper {
+  grid-area: p;
+  background-color: rgba(44, 62, 80,1.0);
+  padding: 10px;
+}
+
+.contentWrapper div {
+  padding: 10px;
+}
