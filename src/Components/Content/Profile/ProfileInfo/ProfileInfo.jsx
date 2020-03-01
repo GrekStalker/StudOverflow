@@ -9,7 +9,7 @@ const ProfileInfo = (props) => {
         <img src={Avatar} />
       </div>
       <div>
-      	Description
+      	Morituri te salutant!
       </div>
     </div>
   );

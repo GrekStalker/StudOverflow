@@ -6,11 +6,11 @@ import {NavLink} from 'react-router-dom'
 const Header = (props) => {
 	return (
 		<header className={classes.header}>
-			<NavLink to='/Main'>
-        		<img src={logo} />
-        	</NavLink>
-      	</header>
-      )
-}
+			<NavLink to='/'>
+				<img src={logo} />
+			</NavLink>
+		</header>
+	)
+};
 
 export default Header;

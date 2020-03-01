@@ -3,8 +3,8 @@ import classes from './Posts.module.css';
 import img from "./Post/img.jpg";
 
 const Post = (props) => {
-  const addLike = () => {
-    props.addLike(props.postItemId)
+  const changeLike = () => {
+    props.changeLike(props.postItemId)
   };
 
   return (
@@ -12,7 +12,7 @@ const Post = (props) => {
       <img src={img} className={classes.postImg} />
       <div>{props.message}</div>
       <div>
-        <button onClick={addLike}>Like</button>
+        <button onClick={changeLike}>Like</button>
         {props.likeCount}
       </div>
     </div>
@@ -20,20 +20,16 @@ const Post = (props) => {
 };
 
 const Posts = (props) => {
-
   const textarea = React.createRef();
-
   const addPost = () => {
     props.addPost();
   };
-
   const onPostChange = () => {
     const text = textarea.current.value;
     props.onPostChange(text);
   };
-
-  const addLike = (postItemId) => {
-    props.addLike(postItemId);
+  const changeLike = (postItemId) => {
+    props.changeLike(postItemId);
   };
 
   return (
@@ -53,7 +49,7 @@ const Posts = (props) => {
           message={post.message} 
           likeCount={post.likeCount}
           postItemId={postItemId}
-          addLike={addLike}
+          changeLike={changeLike}
         />)
       )}
     </div>
