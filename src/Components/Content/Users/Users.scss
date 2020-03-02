@@ -1,0 +1,11 @@
+$imgSize: 70px;
+
+.usersImg {
+  border-radius: $imgSize;
+  width: $imgSize;
+  height: $imgSize;
+}
+//TODO fix this shit
+.userInfo {
+  border: 10px black;
+}
