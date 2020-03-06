@@ -42,4 +42,12 @@ const messageReducer = (state = initialState, action) => {
   }
 };
 
+const addMessageActionCreator = () => ({type : ADD_MESSAGE,});
+const changeNewMessageTextActionCreator = (text) => ({type : CHANGE_NEW_MESSAGE_TEXT, text : text,});
+
+export {
+  addMessageActionCreator,
+  changeNewMessageTextActionCreator,
+};
+
 export default messageReducer;

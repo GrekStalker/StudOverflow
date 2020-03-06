@@ -8,9 +8,9 @@ const NavBar = () => {
       <Item name='Profile' path='/profile' />
       <Item name='Messages' path='/messages' />
       <Item name='News' path='/news' />
+      <Item name='Users' path='/users' />
       <Item name='Music' path='/music' />
       <Item name='Settings' path='/settings' />
-      <Item name='Users' path='/users'/>
     </nav>
   )
 };

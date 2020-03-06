@@ -1,7 +1,7 @@
 import React from 'react';
-import {addMessageActionCreator, changeNewMessageTextActionCreator} from '../../../../Redux/reduxStore.js'
 import MessagesArea from "./MessagesArea";
 import {connect} from "react-redux";
+import {addMessageActionCreator, changeNewMessageTextActionCreator} from "../../../../Redux/messageReducer";
 
 const mapStateToProps = (state) => {
   return {

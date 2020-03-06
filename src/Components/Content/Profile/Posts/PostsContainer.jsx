@@ -1,6 +1,10 @@
-import {addPostActionCreator, onPostChangeActionCreator, changeLikeActionCreator} from '../../../../Redux/reduxStore.js';
 import Posts from "./Posts";
 import {connect} from "react-redux";
+import {
+  addPostActionCreator,
+  changeLikeActionCreator,
+  onPostChangeActionCreator
+} from "../../../../Redux/profileReducer";
 
 const mapStateToProps = (state) => {
   return {

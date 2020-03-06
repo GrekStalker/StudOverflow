@@ -13,8 +13,8 @@ const mapDispatchToProps = (dispatch) => {
 		toggleListening : (userId) => {
 			dispatch(toggleListeningActionCreator(userId));
 		},
-		showMoreUsers : () => {
-			dispatch(showMoreUsersActionCreator())
+		showMoreUsers : (users) => {
+			dispatch(showMoreUsersActionCreator(users))
 		},
 	}
 };

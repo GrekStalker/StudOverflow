@@ -66,4 +66,14 @@ const profileReducer = (state = initialState, action) => {
   }
 };
 
+const changeLikeActionCreator = (postItemId) => ({type : CHANGE_LIKE, postItemId : postItemId,});
+const addPostActionCreator = () => ({type : ADD_POST,});
+const onPostChangeActionCreator = (text) => ({type : CHANGE_NEW_POST_TEXT, text : text,});
+
+export {
+  changeLikeActionCreator,
+  addPostActionCreator,
+  onPostChangeActionCreator,
+};
+
 export default profileReducer;
